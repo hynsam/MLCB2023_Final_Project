@@ -108,6 +108,7 @@ Ala2TSF300.npy
 .score.npy
 # this ignores everything in data except for the file
 !/data
+/data/*
 !/data/aldp.sdf
 !/data/MCMC.pdb
 !/data/TG.pdb
@@ -122,7 +123,7 @@ Ala2TSF300.npy
 !/data/bpti.pdb
 !/data/inference_csv_example.csv
 !/data/1uao.pdb
-/data/*
+# /data/*
 !/data/aldp.pdb
 !/data/splits
 !/data/protein_ligand_example_csv.csv
