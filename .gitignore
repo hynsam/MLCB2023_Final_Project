@@ -1,0 +1,9 @@
+.DS_Store
+
+*.log
+
+HF/FlowSite/data/cache
+HF/FlowSite/data/PDBBind_processed
+HF/FlowSite/data/preprocess_errors
+
+HF/FlowSite/pocket_gen
