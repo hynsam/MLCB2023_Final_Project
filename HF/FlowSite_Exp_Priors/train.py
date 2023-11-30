@@ -4,15 +4,9 @@ from datetime import datetime
 from lightning import Trainer
 from lightning.pytorch.callbacks import ModelCheckpoint
 from lightning.pytorch.loggers import WandbLogger
-
-from datasets.inference_dataset import InferenceDataset
 from utils.logging import warn_with_traceback, Logger, lg
 import warnings
 import sys
-"""
-warnings.filterwarnings("error", message=".*An output.*", category=UserWarning)
-"""
-#warnings.filterwarnings("error", message="An output", category=UserWarning)
 
 from lightning_modules.flowsite_module import FlowSiteModule
 from models.flowsite_model import FlowSiteModel
@@ -37,23 +31,32 @@ def main_function():
         warnings.showwarning = warn_with_traceback
 
     if args.wandb:
-        # wandb_logger = WandbLogger(entity='coarse-graining-mit',
-        #     settings=wandb.Settings(start_method="fork"),
-        #     project=args.project,
-        #     name=args.run_name,
-        #     config=args)
-        wandb_logger = WandbLogger(settings=wandb.Settings(start_method="fork"),
-                                project=args.project,
-                                name=args.run_name,
-                                config=args)
+        wandb_logger = WandbLogger(entity='entity',
+            settings=wandb.Settings(start_method="fork"),
+            project=args.project,
+            name=args.run_name,
+            config=args)
     else:
         wandb_logger = None
 
-    predict_data = InferenceDataset(args)
-    predict_loader = DataLoader(predict_data, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
+    train_data = ComplexDataset(args, args.train_split_path, data_source=args.data_source, data_dir=args.data_dir, multiplicity=args.train_multiplicity, device=device)
+    if args.train_split_path_combine is not None and args.data_source_combine is not None and args.data_dir_combine is not None:
+        train_data_combine = ComplexDataset(args, args.train_split_path_combine, data_source=args.data_source_combine, data_dir=args.data_dir_combine, multiplicity=args.train_multiplicity, device=device)
+        train_data = torch.utils.data.ConcatDataset([train_data, train_data_combine])
+    train_data.fake_lig_ratio = args.fake_ratio_start
+    val_data = ComplexDataset(args, args.val_split_path, data_source=args.data_source, data_dir=args.data_dir, device=device)
+    train_loader = DataLoader(train_data, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
+    val_loader = DataLoader(val_data, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
+    if args.predict_split_path is not None:
+        predict_data = ComplexDataset(args, args.predict_split_path, data_source=args.data_source, data_dir=args.data_dir, device=device)
+        predict_loader = DataLoader(predict_data, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
+    else:
+        predict_loader = None
+    lg(f'Train data: {len(train_data)}')
+    lg(f'Val data: {len(val_data)}')
 
     model = FlowSiteModel(args, device)
-    model_module = FlowSiteModule(args=args, device=device, model=model)
+    model_module = FlowSiteModule(args=args, device=device, model=model, train_data=train_data)
 
     trainer = Trainer(logger=wandb_logger,
                         default_root_dir=os.environ['MODEL_DIR'],
@@ -68,11 +71,16 @@ def main_function():
                         gradient_clip_val=args.gradient_clip_val,
                         callbacks=[ModelCheckpoint(monitor=('val_accuracy' if not args.all_res_early_stop else 'val_all_res_accuracy') if args.residue_loss_weight > 0 else 'val_rmsd<2', mode='max', filename='best', save_top_k=1, save_last=True, auto_insert_metric_name=True, verbose=True)]
                       )
+
     numel = sum([p.numel() for p in model_module.model.parameters()])
     lg(f'Model with {numel} parameters')
 
-    lg("Starting inference and saving predictions to: ", args.out_dir)
-    trainer.predict(model=model_module, dataloaders=predict_loader, ckpt_path=args.checkpoint)
+    if not args.run_test:
+        trainer.fit(model_module, train_loader, val_loader, ckpt_path=args.checkpoint)
+
+    if args.run_test:
+        shutil.copy(args.checkpoint, os.path.join(os.environ['MODEL_DIR'], 'best.ckpt'))
+    trainer.test(model=model_module, dataloaders=predict_loader, ckpt_path=args.checkpoint if args.run_test else 'best', verbose=True)
 
 if __name__ == '__main__':
     main_function()
