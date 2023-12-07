@@ -31,7 +31,7 @@ def main_function():
         warnings.showwarning = warn_with_traceback
 
     if args.wandb:
-        wandb_logger = WandbLogger(entity='entity',
+        wandb_logger = WandbLogger(entity='hynsam137',
             settings=wandb.Settings(start_method="fork"),
             project=args.project,
             name=args.run_name,
