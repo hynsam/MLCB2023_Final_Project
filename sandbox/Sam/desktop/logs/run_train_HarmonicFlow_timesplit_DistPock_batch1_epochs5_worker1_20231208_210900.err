@@ -1,0 +1,114 @@
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  torch.has_cuda,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:111: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  torch.has_cudnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:117: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  torch.has_mps,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  torch.has_mkldnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_test_batches=1.0)` was configured so 100% of the batches will be used..
+wandb: Currently logged in as: hynsam137. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in ./wandb/run-20231208_210904-5g4ex03m
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train_HarmonicFlow_timesplit_DistPock_batch1_epochs5_worker1_20231208_210900
+wandb:  View project at https://wandb.ai/hynsam137/pocket_gen
+wandb:  View run at https://wandb.ai/hynsam137/pocket_gen/runs/5g4ex03m
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type          | Params
+----------------------------------------
+0 | model | FlowSiteModel | 5.6 M 
+----------------------------------------
+5.6 M     Trainable params
+0         Non-trainable params
+5.6 M     Total params
+22.599    Total estimated model params size (MB)
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=23` in the `DataLoader` to improve performance.
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py:293: The number of training batches (10) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=23` in the `DataLoader` to improve performance.
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_1208/train.py", line 86, in <module>
+    main_function()
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_1208/train.py", line 83, in main_function
+    trainer.test(model=model_module, dataloaders=predict_loader, ckpt_path=args.checkpoint if args.run_test else 'best', verbose=True)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 754, in test
+    return call._call_and_handle_interrupt(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 791, in _test_impl
+    ckpt_path = self._checkpoint_connector._select_ckpt_path(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py", line 104, in _select_ckpt_path
+    ckpt_path = self._parse_ckpt_path(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py", line 171, in _parse_ckpt_path
+    raise ValueError(
+ValueError: `.test(ckpt_path="best")` is set but `ModelCheckpoint` is not configured to save the best model.
+wandb: WARNING No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+wandb: - 0.005 MB of 0.005 MB uploadedwandb: \ 0.005 MB of 0.023 MB uploadedwandb: | 0.008 MB of 0.023 MB uploadedwandb: 🚀 View run train_HarmonicFlow_timesplit_DistPock_batch1_epochs5_worker1_20231208_210900 at: https://wandb.ai/hynsam137/pocket_gen/runs/5g4ex03m
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231208_210904-5g4ex03m/logs
+Process Process-1:
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/multiprocessing/process.py", line 317, in _bootstrap
+    util._exit_function()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/multiprocessing/util.py", line 360, in _exit_function
+    _run_finalizers()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/multiprocessing/util.py", line 300, in _run_finalizers
+    finalizer()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/multiprocessing/queues.py", line 199, in _finalize_join
+    thread.join()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _Manager._atexit_setup.<locals>.<lambda> at 0x7fc15b022290>
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/sdk/wandb_manager.py", line 155, in <lambda>
+    self._atexit_lambda = lambda: self._atexit_teardown()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/sdk/wandb_manager.py", line 164, in _atexit_teardown
+    self._teardown(exit_code)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/sdk/wandb_manager.py", line 175, in _teardown
+    result = self._service.join()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 250, in join
+    ret = self._internal_proc.wait()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt: 
+Exception ignored in atexit callback: <bound method Sentry.end_session of <wandb.analytics.sentry.Sentry object at 0x7fc1ac052e00>>
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 43, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 178, in end_session
+    client.flush()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/sentry_sdk/client.py", line 695, in flush
+    self.transport.flush(timeout=timeout, callback=callback)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/sentry_sdk/transport.py", line 553, in flush
+    self._worker.flush(timeout, callback)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/sentry_sdk/worker.py", line 101, in flush
+    self._wait_flush(timeout, callback)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/sentry_sdk/worker.py", line 111, in _wait_flush
+    if not self._timed_queue_join(initial_timeout):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/sentry_sdk/worker.py", line 56, in _timed_queue_join
+    queue.all_tasks_done.wait(timeout=delay)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt: 

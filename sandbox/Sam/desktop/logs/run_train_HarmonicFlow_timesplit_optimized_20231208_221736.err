@@ -1,0 +1,134 @@
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  torch.has_cuda,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:111: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  torch.has_cudnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:117: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  torch.has_mps,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  torch.has_mkldnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/fabric/connector.py:565: `precision=16` is supported for historical reasons but its usage is discouraged. Please set your precision to 16-mixed instead!
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_test_batches=1.0)` was configured so 100% of the batches will be used..
+wandb: Currently logged in as: hynsam137. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in ./wandb/run-20231208_221740-h1l2yoqy
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train_HarmonicFlow_timesplit_optimized_20231208_221736
+wandb:  View project at https://wandb.ai/hynsam137/pocket_gen
+wandb:  View run at https://wandb.ai/hynsam137/pocket_gen/runs/h1l2yoqy
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type          | Params
+----------------------------------------
+0 | model | FlowSiteModel | 5.6 M 
+----------------------------------------
+5.6 M     Trainable params
+0         Non-trainable params
+5.6 M     Total params
+22.599    Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 88, in <module>
+    main_function()
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 81, in main_function
+    trainer.fit(model_module, train_loader, val_loader, ckpt_path=args.checkpoint)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 989, in _run
+    results = self._run_stage()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1035, in _run_stage
+    self.fit_loop.run()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 202, in run
+    self.advance()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 359, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 136, in run
+    self.advance(data_fetcher)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 240, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], batch_idx, kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 187, in run
+    self._optimizer_step(batch_idx, closure)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/optimization/automatic.py", line 265, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 157, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/core/module.py", line 1282, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/core/optimizer.py", line 151, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/strategies/strategy.py", line 230, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/plugins/precision/amp.py", line 93, in optimizer_step
+    step_output = self.scaler.step(optimizer, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/cuda/amp/grad_scaler.py", line 413, in step
+    len(optimizer_state["found_inf_per_device"]) > 0
+AssertionError: No inf checks were recorded for this optimizer.
+wandb: WARNING No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+wandb: 
+wandb: Run history:
+wandb:                        epoch ▁▁
+wandb:               fake_lig_ratio ▁▁
+wandb:              iter_angle_loss ▁▁
+wandb:                iter_aux_loss ▁▁
+wandb:               iter_batch_idx ▁▁
+wandb:       iter_general_step_time ▁▁
+wandb:                iter_lig_size ▁▁
+wandb:                    iter_loss ▁▁
+wandb:           iter_lowT_aux_loss ▁▁
+wandb:               iter_lowT_loss ▁▁
+wandb:           iter_lowT_pos_loss ▁▁
+wandb:                  iter_lowT_t ▁▁
+wandb: iter_metric_calculation_time ▁▁
+wandb:                  iter_norm_t ▁▁
+wandb:          iter_num_designable ▁▁
+wandb:                iter_num_ligs ▁▁
+wandb:                 iter_num_res ▁▁
+wandb:                iter_pos_loss ▁▁
+wandb:       iter_radius_graph_time ▁▁
+wandb:               iter_rec_sigma ▁▁
+wandb:                   iter_sigma ▁▁
+wandb:                       iter_t ▁▁
+wandb:          trainer/global_step ▁▁
+wandb: 
+wandb: Run summary:
+wandb:                        epoch 0.0
+wandb:               fake_lig_ratio 0.0
+wandb:              iter_angle_loss 0.0
+wandb:                iter_aux_loss 5.41427
+wandb:               iter_batch_idx 24.5
+wandb:       iter_general_step_time 0.60998
+wandb:                iter_lig_size 29.88
+wandb:                    iter_loss 2.77752
+wandb:           iter_lowT_aux_loss 8.83663
+wandb:               iter_lowT_loss 4.52389
+wandb:           iter_lowT_pos_loss 9.04779
+wandb:                  iter_lowT_t 0.13482
+wandb: iter_metric_calculation_time 0.00494
+wandb:                  iter_norm_t 0.27487
+wandb:          iter_num_designable 14.52
+wandb:                iter_num_ligs 1.0
+wandb:                 iter_num_res 97.28
+wandb:                iter_pos_loss 5.55504
+wandb:       iter_radius_graph_time 0.01438
+wandb:               iter_rec_sigma 7.39343
+wandb:                   iter_sigma 7.39343
+wandb:                       iter_t 0.44843
+wandb:          trainer/global_step 49.0
+wandb: 
+wandb: 🚀 View run train_HarmonicFlow_timesplit_optimized_20231208_221736 at: https://wandb.ai/hynsam137/pocket_gen/runs/h1l2yoqy
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231208_221740-h1l2yoqy/logs

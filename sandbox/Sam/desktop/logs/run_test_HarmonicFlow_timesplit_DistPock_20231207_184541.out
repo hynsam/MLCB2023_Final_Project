@@ -254,3 +254,321 @@ WARNING: encountered a non-canonical residue without replacement residue and we 
 WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
 WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
 WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 19:50:18.947849] [DESKTOP-OLRHSPI] Error in 3ufl: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 19:50:22.859997] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 3whw
+[2023-12-07 19:50:22.860022] [DESKTOP-OLRHSPI] Error in 3whw: Explicit valence for atom # 18 C, 5, is greater than permitted
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 19:50:50.624727] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 1nu1
+[2023-12-07 19:50:50.624756] [DESKTOP-OLRHSPI] Error in 1nu1: Can't kekulize mol.  Unkekulized atoms: 9 10 11 13 14 15 16 17 18
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 19:51:00.985906] [DESKTOP-OLRHSPI] Error in 5zk8: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 19:51:06.798680] [DESKTOP-OLRHSPI] Error in 3oe8: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 19:51:55.283566] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 5wjj
+[2023-12-07 19:51:55.283595] [DESKTOP-OLRHSPI] Error in 5wjj: Can't kekulize mol.  Unkekulized atoms: 9 10 27 30 32
+[2023-12-07 19:52:19.859302] [DESKTOP-OLRHSPI] Error in 2irz: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 19:52:28.534120] [DESKTOP-OLRHSPI] Error in 4b76: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 19:53:16.128211] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 3lp2
+[2023-12-07 19:53:16.128241] [DESKTOP-OLRHSPI] Error in 3lp2: Can't kekulize mol.  Unkekulized atoms: 0 1 3 4 5 6 8 9 10
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 19:54:07.712232] [DESKTOP-OLRHSPI] Error in 1q6m: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 19:58:14.158234] [DESKTOP-OLRHSPI] Error in 1ryh: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 19:59:27.327215] [DESKTOP-OLRHSPI] Error in 2z5s: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 19:59:32.360786] [DESKTOP-OLRHSPI] Error in 5uig: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 19:59:35.992911] [DESKTOP-OLRHSPI] Error in 4b70: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:01:36.564217] [DESKTOP-OLRHSPI] Error in 2iqg: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 20:02:54.641706] [DESKTOP-OLRHSPI] Error in 5vex: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:03:02.081854] [DESKTOP-OLRHSPI] Error in 3hyf: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 20:03:45.043543] [DESKTOP-OLRHSPI] Error in 5wf5: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:03:45.965382] [DESKTOP-OLRHSPI] Error in 1fkn: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:04:12.237999] [DESKTOP-OLRHSPI] Error in 4zpe: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:04:29.020710] [DESKTOP-OLRHSPI] Error in 3bux: ord() expected a character, but string of length 0 found
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 20:06:11.005975] [DESKTOP-OLRHSPI] Error in 3shj: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:06:19.992258] [DESKTOP-OLRHSPI] Error in 2vkm: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 20:06:55.618257] [DESKTOP-OLRHSPI] Error in 3iqj: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:07:06.042093] [DESKTOP-OLRHSPI] Error in 3pjg: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:07:25.315329] [DESKTOP-OLRHSPI] Error in 1fl6: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:07:29.388670] [DESKTOP-OLRHSPI] Error in 5ws3: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:08:20.342371] [DESKTOP-OLRHSPI] Error in 1g6r: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:08:35.239026] [DESKTOP-OLRHSPI] Error in 3qin: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 20:10:42.919864] [DESKTOP-OLRHSPI] Error in 4q1s: ERROR: encountered a chain id that is not a capital letter: a
+[2023-12-07 20:11:25.145887] [DESKTOP-OLRHSPI] Error in 3qak: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:12:53.706161] [DESKTOP-OLRHSPI] Error in 4b71: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:13:20.852146] [DESKTOP-OLRHSPI] Error in 3duy: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:13:56.429213] [DESKTOP-OLRHSPI] Error in 6drz: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 20:15:07.783329] [DESKTOP-OLRHSPI] Error in 6dry: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 20:15:17.776422] [DESKTOP-OLRHSPI] Error in 2qwf: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 20:16:06.625863] [DESKTOP-OLRHSPI] Error in 5ee7: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:16:33.612729] [DESKTOP-OLRHSPI] Error in 5ndd: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:17:56.395089] [DESKTOP-OLRHSPI] Error in 1f8e: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:18:36.754208] [DESKTOP-OLRHSPI] Error in 5unf: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:19:02.165098] [DESKTOP-OLRHSPI] Error in 5cgd: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:19:04.856763] [DESKTOP-OLRHSPI] Error in 2p8h: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:19:25.131761] [DESKTOP-OLRHSPI] Error in 1vsn: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:19:37.779214] [DESKTOP-OLRHSPI] Error in 4zjc: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:19:40.818251] [DESKTOP-OLRHSPI] Error in 5ung: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:20:25.895242] [DESKTOP-OLRHSPI] Error in 4xnv: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:20:27.793749] [DESKTOP-OLRHSPI] Error in 1yp9: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+[2023-12-07 20:20:54.934936] [DESKTOP-OLRHSPI] Error in 3buw: ord() expected a character, but string of length 0 found
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:21:25.959535] [DESKTOP-OLRHSPI] Error in 2qwb: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:21:28.300907] [DESKTOP-OLRHSPI] Error in 1jpl: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:21:48.811849] [DESKTOP-OLRHSPI] Error in 1jrs: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:23:18.501020] [DESKTOP-OLRHSPI] Error in 2qwd: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:23:31.877452] [DESKTOP-OLRHSPI] Error in 6bqg: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:25:15.297952] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 2q2n
+[2023-12-07 20:25:15.297982] [DESKTOP-OLRHSPI] Error in 2q2n: Can't kekulize mol.  Unkekulized atoms: 0 26
+[2023-12-07 20:25:36.932774] [DESKTOP-OLRHSPI] Error in 4n6h: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:26:08.876779] [DESKTOP-OLRHSPI] Error in 3buo: ord() expected a character, but string of length 0 found
+[2023-12-07 20:26:28.277220] [DESKTOP-OLRHSPI] Error in 3dab: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 20:28:49.278659] [DESKTOP-OLRHSPI] Error in 3oe0: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:29:28.891836] [DESKTOP-OLRHSPI] Error in 2hm1: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:29:29.992390] [DESKTOP-OLRHSPI] Error in 3k5g: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:30:03.090066] [DESKTOP-OLRHSPI] Error in 2p83: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:33:12.454007] [DESKTOP-OLRHSPI] Error in 2qwe: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:33:15.369537] [DESKTOP-OLRHSPI] Error in 6ds0: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:33:51.312745] [DESKTOP-OLRHSPI] Error in 1f92: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:34:03.903273] [DESKTOP-OLRHSPI] Error in 6m9t: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:34:55.732501] [DESKTOP-OLRHSPI] Error in 1axs: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:35:44.750356] [DESKTOP-OLRHSPI] Error in 3pi5: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:36:42.419004] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 2vr0
+[2023-12-07 20:36:42.419039] [DESKTOP-OLRHSPI] Error in 2vr0: Can't kekulize mol.  Unkekulized atoms: 0 2 3 6 7 8 9 10 11
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:37:01.472769] [DESKTOP-OLRHSPI] Error in 4yay: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:37:31.252558] [DESKTOP-OLRHSPI] Error in 1f8d: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:38:07.716464] [DESKTOP-OLRHSPI] Error in 6g8n: ERROR: encountered a chain id that is not a capital letter: a
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:39:28.690476] [DESKTOP-OLRHSPI] Error in 4lxk: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:39:54.161109] [DESKTOP-OLRHSPI] Error in 5cgc: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:40:27.787079] [DESKTOP-OLRHSPI] Error in 4k5y: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:41:00.027774] [DESKTOP-OLRHSPI] Error in 1xs7: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:41:06.111054] [DESKTOP-OLRHSPI] Error in 1ryf: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:41:10.397240] [DESKTOP-OLRHSPI] Error in 3odu: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:41:14.470412] [DESKTOP-OLRHSPI] Error in 4djh: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:41:42.006076] [DESKTOP-OLRHSPI] Error in 6iiu: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:42:00.049011] [DESKTOP-OLRHSPI] Error in 3i25: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:43:09.155291] [DESKTOP-OLRHSPI] Error in 3exo: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:43:45.785706] [DESKTOP-OLRHSPI] Error in 5svy: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:44:56.408995] [DESKTOP-OLRHSPI] Error in 3k5f: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:48:09.503914] [DESKTOP-OLRHSPI] Error in 4azy: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:49:25.335139] [DESKTOP-OLRHSPI] Error in 5tvn: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:49:55.843678] [DESKTOP-OLRHSPI] Error in 5wf6: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:50:36.299579] [DESKTOP-OLRHSPI] Error in 2b8v: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 20:52:21.633405] [DESKTOP-OLRHSPI] Error in 1i6v: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:52:44.576923] [DESKTOP-OLRHSPI] Error in 2hiz: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:52:52.056968] [DESKTOP-OLRHSPI] Error in 1lox: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:55:05.535623] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 5tyk
+[2023-12-07 20:55:05.535653] [DESKTOP-OLRHSPI] Error in 5tyk: Can't kekulize mol.  Unkekulized atoms: 3 4 5 15 17
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:56:29.428996] [DESKTOP-OLRHSPI] Error in 3dv1: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 20:57:29.434231] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 5yjy
+[2023-12-07 20:57:29.434261] [DESKTOP-OLRHSPI] Error in 5yjy: Can't kekulize mol.  Unkekulized atoms: 0 2 3 6 7 8 9 10 11
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+[2023-12-07 20:58:03.878082] [DESKTOP-OLRHSPI] Error in 4lxa: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:58:38.913505] [DESKTOP-OLRHSPI] Error in 4zj8: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 20:58:41.688896] [DESKTOP-OLRHSPI] Error in 3kyr: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: ACE
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 21:01:48.707388] [DESKTOP-OLRHSPI] Error in 5iua: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 21:02:34.202569] [DESKTOP-OLRHSPI] Error in 5iu7: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 21:02:57.362358] [DESKTOP-OLRHSPI] Error in 3dv5: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 21:02:59.315172] [DESKTOP-OLRHSPI] Error in 3mg0: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+[2023-12-07 21:03:08.445614] [DESKTOP-OLRHSPI] Error in 3bum: ord() expected a character, but string of length 0 found
+[2023-12-07 21:03:15.126792] [DESKTOP-OLRHSPI] Error in 6bqh: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: CSD
+[2023-12-07 21:04:03.396334] [DESKTOP-OLRHSPI] Loading valid complex path names
+[2023-12-07 21:04:03.403504] [DESKTOP-OLRHSPI] Finished loading combined data of length: 16194
+[2023-12-07 21:04:03.490665] [DESKTOP-OLRHSPI] Finished filtering combined data for ligands of min size 1 and max size 200 and min_num_contacts 1 to end up with this many: 16193
+[2023-12-07 21:04:03.511962] [DESKTOP-OLRHSPI] Finished filtering combined data for ligands of max size 200 to end up with this many: 16193
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 21:04:20.516264] [DESKTOP-OLRHSPI] Error in 5x33: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: KCX
+[2023-12-07 21:05:48.802393] [DESKTOP-OLRHSPI] ERROR: RDKit could not initialize any ligand in 1hyz
+[2023-12-07 21:05:48.802426] [DESKTOP-OLRHSPI] Error in 1hyz: Can't kekulize mol.  Unkekulized atoms: 2 3 4 5 6
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: PCA
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP
+[2023-12-07 21:07:28.393065] [DESKTOP-OLRHSPI] Error in 2is0: ERROR: pdb_res_ids are not sorted within the chain. We need them to be sorted for the get_inter_res_distances calculation and in 
+WARNING: encountered a non-canonical residue without replacement residue and we are skipping it: LLP

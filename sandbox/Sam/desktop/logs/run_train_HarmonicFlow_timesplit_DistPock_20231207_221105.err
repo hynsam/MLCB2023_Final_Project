@@ -1,0 +1,173 @@
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  torch.has_cuda,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:111: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  torch.has_cudnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:117: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  torch.has_mps,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  torch.has_mkldnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_test_batches=1.0)` was configured so 100% of the batches will be used..
+wandb: Currently logged in as: hynsam137. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in ./wandb/run-20231207_221110-3z1k4ast
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train_HarmonicFlow_timesplit_DistPock_20231207_221105
+wandb:  View project at https://wandb.ai/hynsam137/pocket_gen
+wandb:  View run at https://wandb.ai/hynsam137/pocket_gen/runs/3z1k4ast
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name  | Type          | Params
+----------------------------------------
+0 | model | FlowSiteModel | 5.6 M 
+----------------------------------------
+5.6 M     Trainable params
+0         Non-trainable params
+5.6 M     Total params
+22.599    Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 86, in <module>
+    main_function()
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 79, in main_function
+    trainer.fit(model_module, train_loader, val_loader, ckpt_path=args.checkpoint)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 989, in _run
+    results = self._run_stage()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1035, in _run_stage
+    self.fit_loop.run()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 202, in run
+    self.advance()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/fit_loop.py", line 359, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 137, in run
+    self.on_advance_end(data_fetcher)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/training_epoch_loop.py", line 285, in on_advance_end
+    self.val_loop.run()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 134, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 391, in _evaluation_step
+    output = call._call_strategy_hook(trainer, hook_name, *step_args)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 309, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/strategies/strategy.py", line 403, in validation_step
+    return self.lightning_module.validation_step(*args, **kwargs)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/lightning_modules/flowsite_module.py", line 66, in validation_step
+    out = self.general_step_oom_wrapper(batch, batch_idx)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/lightning_modules/general_module.py", line 76, in general_step_oom_wrapper
+    raise e
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/lightning_modules/general_module.py", line 66, in general_step_oom_wrapper
+    return self.general_step(batch, batch_idx)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/lightning_modules/flowsite_module.py", line 175, in general_step
+    raise e
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/lightning_modules/flowsite_module.py", line 170, in general_step
+    res_pred, pos_list, angles = self.model(copy.deepcopy(batch), x_self=sample_prior(batch, self.args.prior_scale , harmonic=not self.args.gaussian_prior) if self.args.self_condition_x else None)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/models/flowsite_model.py", line 113, in forward
+    lig_na_tfn, rec_na_tfn, lig_pos_stack = self.tfn(data, x_self)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/models/flowsite_model.py", line 276, in forward
+    lig_pos, lig_na, rec_na = tfn_layer(data, rec_cg, lig_pos.detach(), lig_na, lig_ea, rec_na, temb, x_self)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/models/tfn_layers.py", line 165, in forward
+    lig2lig_na = self.lig2lig(lig_na, lig_cg.idx, edge_attr_, lig_cg.sh)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/models/tfn_layers.py", line 223, in forward
+    tp = self.tp(node_attr[edge_dst], edge_sh, self.fc(edge_attr))
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/e3nn/o3/_tensor_product/_tensor_product.py", line 542, in forward
+    return self._compiled_main_left_right(x, y, real_weight)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 291549) is killed by signal: Killed. 
+wandb: - 0.005 MB of 0.005 MB uploadedwandb: WARNING No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+wandb: \ 0.005 MB of 0.005 MB uploadedwandb: | 0.005 MB of 0.274 MB uploadedwandb: / 0.274 MB of 0.274 MB uploadedwandb: 
+wandb: Run history:
+wandb:                        epoch ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:               fake_lig_ratio ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:              iter_angle_loss ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                iter_aux_loss ███▇▅▄▆▅▄▆▆▅▄▃▄▇▅▃▃▂▂▂▃▃▂▃▃▂▂▃▃▂▁▁▁▂▃▃▂▃
+wandb:               iter_batch_idx ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb:       iter_general_step_time █▄▇▁▁▂▂▂▁▁▂▁▁▂▂▂▂▂▂▂▂▁▂▂▁▁▂▁▂▁▁▁▁▁▁▁▂▁▂▂
+wandb:                iter_lig_size ▁█▅▂▂▄█▅▅▅▆▄▄▅▂█▆▄▇▅▅▃▇▄▄▂▅▄▄▄▃▅▅▁▄▃▄▄▆▅
+wandb:                    iter_loss ███▇▅▄▆▅▄▆▆▄▄▃▄▇▅▃▃▂▂▂▃▃▂▂▃▂▂▃▃▂▁▁▁▂▃▂▂▃
+wandb:           iter_lowT_aux_loss ▇█▇▇▆▅█▇▅▇▅▆▄▅▄▇▅▄▅▂▃▂▃▄▄▂▃▂▃▂▂▃▁▄▂▃▄▂▂▃
+wandb:               iter_lowT_loss ▇█▇▇▇▅▇▇▅▇▅▆▄▅▄█▅▄▅▂▃▂▃▄▄▂▃▂▃▂▃▃▁▄▂▃▅▃▂▃
+wandb:           iter_lowT_pos_loss ▇█▇▇▇▅▇▇▅▇▅▆▄▅▄█▅▄▅▂▃▂▃▄▄▂▃▂▃▂▃▃▁▄▂▃▅▃▂▃
+wandb:                  iter_lowT_t ▇▂▄▃▄█▂▆▆▅▅▄▅▄▄▄▄▆▂▃▄▄▅▃▁▄▅▅▅▅▆▇▅▃▅▃▃▃▆▅
+wandb: iter_metric_calculation_time ██▂▁▁▂▁▂▁▁▁▁▁▂▁▂▁▂▂▁▁▁▁▂▁▁▂▂▂▁▁▁▂▁▁▁▂▁▁▂
+wandb:                  iter_norm_t ▃▃▃▄▇█▅▅▄▃▁▃▆▇▄▂▂▄▆▇█▃▂▃▆▂▂▅▅▁▄▆▆█▆▃▄▅▄▄
+wandb:          iter_num_designable ▃▆▆▃▂▄▃▆▄▃▅▄▅▄▃▅▅▄█▂▅▂▅▅▃▄▅▄▅▅▁▂▄▁▁▄▇▆▆▆
+wandb:                iter_num_ligs ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 iter_num_res ▆▄▆▂▂▂▂▆▄▃▆▅▆▅▃▆▁▆█▂▃▂▄▇▃▅▅▆▃▆▄▁▃▃▂▅██▄▇
+wandb:                iter_pos_loss ███▇▅▄▆▅▄▆▆▄▄▃▄▇▅▃▃▂▂▂▃▃▂▂▃▂▂▃▃▂▁▁▁▂▃▂▂▃
+wandb:       iter_radius_graph_time ▂▂█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:               iter_rec_sigma ▅▅▇▄▂▄▅▆▅▅▇▆▆▆▂▆▂▆▇▂▄▃▅▇▄▅▇▆▄▆▆▁▂▃▃▅█▇▅▇
+wandb:                   iter_sigma ▅▅▇▄▂▄▅▆▅▅▇▆▆▆▂▆▂▆▇▂▄▃▅▇▄▅▇▆▄▆▆▁▂▃▃▅█▇▅▇
+wandb:                       iter_t ▃▄▃▄▆█▅▅▄▃▁▃▅▇▄▂▂▄▅▆▇▃▂▃▆▂▂▅▄▁▄▆▆▇▅▃▃▄▄▄
+wandb:          trainer/global_step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇███
+wandb: 
+wandb: Run summary:
+wandb:                        epoch 0.0
+wandb:               fake_lig_ratio 0.0
+wandb:              iter_angle_loss 0.0
+wandb:                iter_aux_loss 3.1428
+wandb:               iter_batch_idx 3974.5
+wandb:       iter_general_step_time 0.2127
+wandb:                iter_lig_size 33.605
+wandb:                    iter_loss 1.54049
+wandb:           iter_lowT_aux_loss 6.31474
+wandb:               iter_lowT_loss 3.09843
+wandb:           iter_lowT_pos_loss 6.19686
+wandb:                  iter_lowT_t 0.16074
+wandb: iter_metric_calculation_time 0.00537
+wandb:                  iter_norm_t 0.32329
+wandb:          iter_num_designable 15.115
+wandb:                iter_num_ligs 1.0
+wandb:                 iter_num_res 100.235
+wandb:                iter_pos_loss 3.08098
+wandb:       iter_radius_graph_time 0.02095
+wandb:               iter_rec_sigma 7.57099
+wandb:                   iter_sigma 7.57099
+wandb:                       iter_t 0.48822
+wandb:          trainer/global_step 3999.0
+wandb: 
+wandb: 🚀 View run train_HarmonicFlow_timesplit_DistPock_20231207_221105 at: https://wandb.ai/hynsam137/pocket_gen/runs/3z1k4ast
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231207_221110-3z1k4ast/logs

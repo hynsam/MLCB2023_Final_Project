@@ -1,0 +1,502 @@
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:110: UserWarning: 'has_cuda' is deprecated, please use 'torch.backends.cuda.is_built()'
+  torch.has_cuda,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:111: UserWarning: 'has_cudnn' is deprecated, please use 'torch.backends.cudnn.is_available()'
+  torch.has_cudnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:117: UserWarning: 'has_mps' is deprecated, please use 'torch.backends.mps.is_built()'
+  torch.has_mps,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/overrides.py:118: UserWarning: 'has_mkldnn' is deprecated, please use 'torch.backends.mkldnn.is_available()'
+  torch.has_mkldnn,
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/torch/jit/_check.py:178: UserWarning: The TorchScript type system doesn't support instance-level annotations on empty non-base types in `__init__`. Instead, either 1) use a type annotation in the class body, or 2) wrap the type in `torch.jit.Attribute`.
+  warnings.warn(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(limit_test_batches=1.0)` was configured so 100% of the batches will be used..
+wandb: Currently logged in as: hynsam137. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in ./wandb/run-20231207_213502-fq211gle
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run test_HarmonicFlow_timesplit_DistPock
+wandb:  View project at https://wandb.ai/hynsam137/pocket_gen
+wandb:  View run at https://wandb.ai/hynsam137/pocket_gen/runs/fq211gle
+Restoring states from the checkpoint path at pocket_gen/duw71q7p/checkpoints/best.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loaded model weights from the checkpoint at pocket_gen/duw71q7p/checkpoints/best.ckpt
+/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/utils/train_utils.py:37: RuntimeWarning: overflow encountered in square
+  Rotation.align_vectors(x0_, true_pos_)[1] / np.sqrt(x0_.shape[0])
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/numpy/core/fromnumeric.py:86: RuntimeWarning: overflow encountered in reduce
+  return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
+/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/numpy/core/_methods.py:233: RuntimeWarning: invalid value encountered in subtract
+  x = asanyarray(arr - arrmean)
+Traceback (most recent call last):
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 86, in <module>
+    main_function()
+  File "/home/samhuang/Documents/GitHub/MLCB2023_Final_Project/HF/FlowSite_Exp_Priors/train.py", line 83, in main_function
+    trainer.test(model=model_module, dataloaders=predict_loader, ckpt_path=args.checkpoint if args.run_test else 'best', verbose=True)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 754, in test
+    return call._call_and_handle_interrupt(
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 794, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 989, in _run
+    results = self._run_stage()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 1028, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 141, in run
+    return self.on_run_end()
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 273, in on_run_end
+    self._print_results(logged_outputs, self._stage.value)
+  File "/home/samhuang/mambaforge/envs/flowsite/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 547, in _print_results
+    if sys.stdout.encoding is not None:
+AttributeError: 'Logger' object has no attribute 'encoding'
+wandb: - 0.005 MB of 0.005 MB uploadedwandb: \ 0.005 MB of 0.005 MB uploadedwandb: WARNING No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+wandb: | 0.005 MB of 0.005 MB uploadedwandb: / 0.005 MB of 0.005 MB uploadedwandb: - 0.005 MB of 0.005 MB uploadedwandb: 
+wandb: Run history:
+wandb:                                    epoch ▁
+wandb:                           fake_lig_ratio ▁
+wandb:                  invalid_grads_per_epoch ▁
+wandb:                          pred_angle_loss ▁
+wandb:                            pred_aux_loss ▁
+wandb:                   pred_aux_loss_msdTop10 ▁
+wandb:                    pred_aux_loss_msdTop5 ▁
+wandb:                        pred_aux_loss_std ▁
+wandb:                           pred_batch_idx ▁
+wandb:                  pred_batch_idx_msdTop10 ▁
+wandb:                   pred_batch_idx_msdTop5 ▁
+wandb:                       pred_batch_idx_std ▁
+wandb:                     pred_centroid_rmsd<1 ▁
+wandb:              pred_centroid_rmsd<1_median ▁
+wandb:            pred_centroid_rmsd<1_msdTop10 ▁
+wandb:     pred_centroid_rmsd<1_msdTop10_median ▁
+wandb:             pred_centroid_rmsd<1_msdTop5 ▁
+wandb:      pred_centroid_rmsd<1_msdTop5_median ▁
+wandb:                 pred_centroid_rmsd<1_out ▁
+wandb:          pred_centroid_rmsd<1_out_median ▁
+wandb:        pred_centroid_rmsd<1_out_msdTop10 ▁
+wandb: pred_centroid_rmsd<1_out_msdTop10_median ▁
+wandb:         pred_centroid_rmsd<1_out_msdTop5 ▁
+wandb:  pred_centroid_rmsd<1_out_msdTop5_median ▁
+wandb:             pred_centroid_rmsd<1_out_std ▁
+wandb:                 pred_centroid_rmsd<1_std ▁
+wandb:                     pred_centroid_rmsd<2 ▁
+wandb:              pred_centroid_rmsd<2_median ▁
+wandb:            pred_centroid_rmsd<2_msdTop10 ▁
+wandb:     pred_centroid_rmsd<2_msdTop10_median ▁
+wandb:             pred_centroid_rmsd<2_msdTop5 ▁
+wandb:      pred_centroid_rmsd<2_msdTop5_median ▁
+wandb:                 pred_centroid_rmsd<2_out ▁
+wandb:          pred_centroid_rmsd<2_out_median ▁
+wandb:        pred_centroid_rmsd<2_out_msdTop10 ▁
+wandb: pred_centroid_rmsd<2_out_msdTop10_median ▁
+wandb:         pred_centroid_rmsd<2_out_msdTop5 ▁
+wandb:  pred_centroid_rmsd<2_out_msdTop5_median ▁
+wandb:             pred_centroid_rmsd<2_out_std ▁
+wandb:                 pred_centroid_rmsd<2_std ▁
+wandb:                     pred_centroid_rmsd<5 ▁
+wandb:              pred_centroid_rmsd<5_median ▁
+wandb:            pred_centroid_rmsd<5_msdTop10 ▁
+wandb:     pred_centroid_rmsd<5_msdTop10_median ▁
+wandb:             pred_centroid_rmsd<5_msdTop5 ▁
+wandb:      pred_centroid_rmsd<5_msdTop5_median ▁
+wandb:                 pred_centroid_rmsd<5_out ▁
+wandb:          pred_centroid_rmsd<5_out_median ▁
+wandb:        pred_centroid_rmsd<5_out_msdTop10 ▁
+wandb: pred_centroid_rmsd<5_out_msdTop10_median ▁
+wandb:         pred_centroid_rmsd<5_out_msdTop5 ▁
+wandb:  pred_centroid_rmsd<5_out_msdTop5_median ▁
+wandb:             pred_centroid_rmsd<5_out_std ▁
+wandb:                 pred_centroid_rmsd<5_std ▁
+wandb:                pred_centroid_rmsd_median ▁
+wandb:       pred_centroid_rmsd_msdTop10_median ▁
+wandb:        pred_centroid_rmsd_msdTop5_median ▁
+wandb:            pred_centroid_rmsd_out_median ▁
+wandb:   pred_centroid_rmsd_out_msdTop10_median ▁
+wandb:    pred_centroid_rmsd_out_msdTop5_median ▁
+wandb:                   pred_general_step_time ▁
+wandb:                       pred_kabsch_rmsd<1 ▁
+wandb:                pred_kabsch_rmsd<1_median ▁
+wandb:              pred_kabsch_rmsd<1_msdTop10 ▁
+wandb:       pred_kabsch_rmsd<1_msdTop10_median ▁
+wandb:               pred_kabsch_rmsd<1_msdTop5 ▁
+wandb:        pred_kabsch_rmsd<1_msdTop5_median ▁
+wandb:                   pred_kabsch_rmsd<1_out ▁
+wandb:            pred_kabsch_rmsd<1_out_median ▁
+wandb:          pred_kabsch_rmsd<1_out_msdTop10 ▁
+wandb:   pred_kabsch_rmsd<1_out_msdTop10_median ▁
+wandb:           pred_kabsch_rmsd<1_out_msdTop5 ▁
+wandb:    pred_kabsch_rmsd<1_out_msdTop5_median ▁
+wandb:               pred_kabsch_rmsd<1_out_std ▁
+wandb:                   pred_kabsch_rmsd<1_std ▁
+wandb:                       pred_kabsch_rmsd<2 ▁
+wandb:                pred_kabsch_rmsd<2_median ▁
+wandb:              pred_kabsch_rmsd<2_msdTop10 ▁
+wandb:       pred_kabsch_rmsd<2_msdTop10_median ▁
+wandb:               pred_kabsch_rmsd<2_msdTop5 ▁
+wandb:        pred_kabsch_rmsd<2_msdTop5_median ▁
+wandb:                   pred_kabsch_rmsd<2_out ▁
+wandb:            pred_kabsch_rmsd<2_out_median ▁
+wandb:          pred_kabsch_rmsd<2_out_msdTop10 ▁
+wandb:   pred_kabsch_rmsd<2_out_msdTop10_median ▁
+wandb:           pred_kabsch_rmsd<2_out_msdTop5 ▁
+wandb:    pred_kabsch_rmsd<2_out_msdTop5_median ▁
+wandb:               pred_kabsch_rmsd<2_out_std ▁
+wandb:                   pred_kabsch_rmsd<2_std ▁
+wandb:                       pred_kabsch_rmsd<5 ▁
+wandb:                pred_kabsch_rmsd<5_median ▁
+wandb:              pred_kabsch_rmsd<5_msdTop10 ▁
+wandb:       pred_kabsch_rmsd<5_msdTop10_median ▁
+wandb:               pred_kabsch_rmsd<5_msdTop5 ▁
+wandb:        pred_kabsch_rmsd<5_msdTop5_median ▁
+wandb:                   pred_kabsch_rmsd<5_out ▁
+wandb:            pred_kabsch_rmsd<5_out_median ▁
+wandb:          pred_kabsch_rmsd<5_out_msdTop10 ▁
+wandb:   pred_kabsch_rmsd<5_out_msdTop10_median ▁
+wandb:           pred_kabsch_rmsd<5_out_msdTop5 ▁
+wandb:    pred_kabsch_rmsd<5_out_msdTop5_median ▁
+wandb:               pred_kabsch_rmsd<5_out_std ▁
+wandb:                   pred_kabsch_rmsd<5_std ▁
+wandb:                  pred_kabsch_rmsd_median ▁
+wandb:         pred_kabsch_rmsd_msdTop10_median ▁
+wandb:          pred_kabsch_rmsd_msdTop5_median ▁
+wandb:              pred_kabsch_rmsd_out_median ▁
+wandb:     pred_kabsch_rmsd_out_msdTop10_median ▁
+wandb:      pred_kabsch_rmsd_out_msdTop5_median ▁
+wandb:                            pred_lig_size ▁
+wandb:                   pred_lig_size_msdTop10 ▁
+wandb:                    pred_lig_size_msdTop5 ▁
+wandb:                        pred_lig_size_std ▁
+wandb:                                pred_loss ▁
+wandb:                       pred_loss_msdTop10 ▁
+wandb:                        pred_loss_msdTop5 ▁
+wandb:                            pred_loss_std ▁
+wandb:                       pred_lowT_aux_loss ▁
+wandb:                           pred_lowT_loss ▁
+wandb:                       pred_lowT_pos_loss ▁
+wandb:                              pred_lowT_t ▁
+wandb:             pred_metric_calculation_time ▁
+wandb:                              pred_norm_t ▁
+wandb:                     pred_norm_t_msdTop10 ▁
+wandb:                      pred_norm_t_msdTop5 ▁
+wandb:                          pred_norm_t_std ▁
+wandb:                      pred_num_designable ▁
+wandb:             pred_num_designable_msdTop10 ▁
+wandb:              pred_num_designable_msdTop5 ▁
+wandb:                  pred_num_designable_std ▁
+wandb:                            pred_num_ligs ▁
+wandb:                   pred_num_ligs_msdTop10 ▁
+wandb:                    pred_num_ligs_msdTop5 ▁
+wandb:                        pred_num_ligs_std ▁
+wandb:                             pred_num_res ▁
+wandb:                    pred_num_res_msdTop10 ▁
+wandb:                     pred_num_res_msdTop5 ▁
+wandb:                         pred_num_res_std ▁
+wandb:                            pred_pos_loss ▁
+wandb:                   pred_pos_loss_msdTop10 ▁
+wandb:                    pred_pos_loss_msdTop5 ▁
+wandb:                        pred_pos_loss_std ▁
+wandb:                   pred_radius_graph_time ▁
+wandb:                           pred_rec_sigma ▁
+wandb:                  pred_rec_sigma_msdTop10 ▁
+wandb:                   pred_rec_sigma_msdTop5 ▁
+wandb:                       pred_rec_sigma_std ▁
+wandb:                              pred_rmsd<1 ▁
+wandb:                       pred_rmsd<1_median ▁
+wandb:                     pred_rmsd<1_msdTop10 ▁
+wandb:              pred_rmsd<1_msdTop10_median ▁
+wandb:                      pred_rmsd<1_msdTop5 ▁
+wandb:               pred_rmsd<1_msdTop5_median ▁
+wandb:                          pred_rmsd<1_out ▁
+wandb:                   pred_rmsd<1_out_median ▁
+wandb:                 pred_rmsd<1_out_msdTop10 ▁
+wandb:          pred_rmsd<1_out_msdTop10_median ▁
+wandb:                  pred_rmsd<1_out_msdTop5 ▁
+wandb:           pred_rmsd<1_out_msdTop5_median ▁
+wandb:                      pred_rmsd<1_out_std ▁
+wandb:                          pred_rmsd<1_std ▁
+wandb:                              pred_rmsd<2 ▁
+wandb:                       pred_rmsd<2_median ▁
+wandb:                     pred_rmsd<2_msdTop10 ▁
+wandb:              pred_rmsd<2_msdTop10_median ▁
+wandb:                      pred_rmsd<2_msdTop5 ▁
+wandb:               pred_rmsd<2_msdTop5_median ▁
+wandb:                          pred_rmsd<2_out ▁
+wandb:                   pred_rmsd<2_out_median ▁
+wandb:                 pred_rmsd<2_out_msdTop10 ▁
+wandb:          pred_rmsd<2_out_msdTop10_median ▁
+wandb:                  pred_rmsd<2_out_msdTop5 ▁
+wandb:           pred_rmsd<2_out_msdTop5_median ▁
+wandb:                      pred_rmsd<2_out_std ▁
+wandb:                          pred_rmsd<2_std ▁
+wandb:                              pred_rmsd<5 ▁
+wandb:                       pred_rmsd<5_median ▁
+wandb:                     pred_rmsd<5_msdTop10 ▁
+wandb:              pred_rmsd<5_msdTop10_median ▁
+wandb:                      pred_rmsd<5_msdTop5 ▁
+wandb:               pred_rmsd<5_msdTop5_median ▁
+wandb:                          pred_rmsd<5_out ▁
+wandb:                   pred_rmsd<5_out_median ▁
+wandb:                 pred_rmsd<5_out_msdTop10 ▁
+wandb:          pred_rmsd<5_out_msdTop10_median ▁
+wandb:                  pred_rmsd<5_out_msdTop5 ▁
+wandb:           pred_rmsd<5_out_msdTop5_median ▁
+wandb:                      pred_rmsd<5_out_std ▁
+wandb:                          pred_rmsd<5_std ▁
+wandb:                         pred_rmsd_median ▁
+wandb:                pred_rmsd_msdTop10_median ▁
+wandb:                 pred_rmsd_msdTop5_median ▁
+wandb:                     pred_rmsd_out_median ▁
+wandb:            pred_rmsd_out_msdTop10_median ▁
+wandb:             pred_rmsd_out_msdTop5_median ▁
+wandb:                               pred_sigma ▁
+wandb:                      pred_sigma_msdTop10 ▁
+wandb:                       pred_sigma_msdTop5 ▁
+wandb:                           pred_sigma_std ▁
+wandb:                                   pred_t ▁
+wandb:                          pred_t_msdTop10 ▁
+wandb:                           pred_t_msdTop5 ▁
+wandb:                               pred_t_std ▁
+wandb:                      trainer/global_step ▁
+wandb: 
+wandb: Run summary:
+wandb:                                    epoch 0.0
+wandb:                           fake_lig_ratio 0.0
+wandb:                  invalid_grads_per_epoch 0.0
+wandb:                          pred_angle_loss 0.0
+wandb:                            pred_aux_loss 3.64081
+wandb:                   pred_aux_loss_msdTop10 3.40816
+wandb:                    pred_aux_loss_msdTop5 3.52814
+wandb:                        pred_aux_loss_std 2.65918
+wandb:                           pred_batch_idx 44.37604
+wandb:                  pred_batch_idx_msdTop10 44.37604
+wandb:                   pred_batch_idx_msdTop5 44.37604
+wandb:                       pred_batch_idx_std 0.0
+wandb:                       pred_centroid_rmsd inf
+wandb:                     pred_centroid_rmsd<1 0.09081
+wandb:              pred_centroid_rmsd<1_median 0.0
+wandb:            pred_centroid_rmsd<1_msdTop10 0.11978
+wandb:     pred_centroid_rmsd<1_msdTop10_median 0.0
+wandb:             pred_centroid_rmsd<1_msdTop5 0.11699
+wandb:      pred_centroid_rmsd<1_msdTop5_median 0.0
+wandb:                 pred_centroid_rmsd<1_out 0.11058
+wandb:          pred_centroid_rmsd<1_out_median 0.0
+wandb:        pred_centroid_rmsd<1_out_msdTop10 0.1532
+wandb: pred_centroid_rmsd<1_out_msdTop10_median 0.0
+wandb:         pred_centroid_rmsd<1_out_msdTop5 0.13928
+wandb:  pred_centroid_rmsd<1_out_msdTop5_median 0.0
+wandb:             pred_centroid_rmsd<1_out_std 0.08941
+wandb:                 pred_centroid_rmsd<1_std 0.0811
+wandb:                     pred_centroid_rmsd<2 0.35655
+wandb:              pred_centroid_rmsd<2_median 0.0
+wandb:            pred_centroid_rmsd<2_msdTop10 0.50696
+wandb:     pred_centroid_rmsd<2_msdTop10_median 1.0
+wandb:             pred_centroid_rmsd<2_msdTop5 0.47911
+wandb:      pred_centroid_rmsd<2_msdTop5_median 0.0
+wandb:                 pred_centroid_rmsd<2_out 0.40306
+wandb:          pred_centroid_rmsd<2_out_median 0.0
+wandb:        pred_centroid_rmsd<2_out_msdTop10 0.52368
+wandb: pred_centroid_rmsd<2_out_msdTop10_median 1.0
+wandb:         pred_centroid_rmsd<2_out_msdTop5 0.50418
+wandb:  pred_centroid_rmsd<2_out_msdTop5_median 1.0
+wandb:             pred_centroid_rmsd<2_out_std 0.17365
+wandb:                 pred_centroid_rmsd<2_std 0.16995
+wandb:                     pred_centroid_rmsd<5 0.77994
+wandb:              pred_centroid_rmsd<5_median 1.0
+wandb:            pred_centroid_rmsd<5_msdTop10 0.87744
+wandb:     pred_centroid_rmsd<5_msdTop10_median 1.0
+wandb:             pred_centroid_rmsd<5_msdTop5 0.85794
+wandb:      pred_centroid_rmsd<5_msdTop5_median 1.0
+wandb:                 pred_centroid_rmsd<5_out 0.78607
+wandb:          pred_centroid_rmsd<5_out_median 1.0
+wandb:        pred_centroid_rmsd<5_out_msdTop10 0.88022
+wandb: pred_centroid_rmsd<5_out_msdTop10_median 1.0
+wandb:         pred_centroid_rmsd<5_out_msdTop5 0.8663
+wandb:  pred_centroid_rmsd<5_out_msdTop5_median 1.0
+wandb:             pred_centroid_rmsd<5_out_std 0.10607
+wandb:                 pred_centroid_rmsd<5_std 0.10348
+wandb:                pred_centroid_rmsd_median 2.28518
+wandb:              pred_centroid_rmsd_msdTop10 inf
+wandb:       pred_centroid_rmsd_msdTop10_median 1.92143
+wandb:               pred_centroid_rmsd_msdTop5 inf
+wandb:        pred_centroid_rmsd_msdTop5_median 1.96894
+wandb:                   pred_centroid_rmsd_out inf
+wandb:            pred_centroid_rmsd_out_median 2.12289
+wandb:          pred_centroid_rmsd_out_msdTop10 inf
+wandb:   pred_centroid_rmsd_out_msdTop10_median 1.86745
+wandb:           pred_centroid_rmsd_out_msdTop5 inf
+wandb:    pred_centroid_rmsd_out_msdTop5_median 1.88564
+wandb:               pred_centroid_rmsd_out_std nan
+wandb:                   pred_centroid_rmsd_std nan
+wandb:                   pred_general_step_time 1.12081
+wandb:                         pred_kabsch_rmsd inf
+wandb:                       pred_kabsch_rmsd<1 0.00613
+wandb:                pred_kabsch_rmsd<1_median 0.0
+wandb:              pred_kabsch_rmsd<1_msdTop10 0.01671
+wandb:       pred_kabsch_rmsd<1_msdTop10_median 0.0
+wandb:               pred_kabsch_rmsd<1_msdTop5 0.01393
+wandb:        pred_kabsch_rmsd<1_msdTop5_median 0.0
+wandb:                   pred_kabsch_rmsd<1_out 0.01058
+wandb:            pred_kabsch_rmsd<1_out_median 0.0
+wandb:          pred_kabsch_rmsd<1_out_msdTop10 0.02507
+wandb:   pred_kabsch_rmsd<1_out_msdTop10_median 0.0
+wandb:           pred_kabsch_rmsd<1_out_msdTop5 0.0195
+wandb:    pred_kabsch_rmsd<1_out_msdTop5_median 0.0
+wandb:               pred_kabsch_rmsd<1_out_std 0.01556
+wandb:                   pred_kabsch_rmsd<1_std 0.00788
+wandb:                       pred_kabsch_rmsd<2 0.12423
+wandb:                pred_kabsch_rmsd<2_median 0.0
+wandb:              pred_kabsch_rmsd<2_msdTop10 0.21448
+wandb:       pred_kabsch_rmsd<2_msdTop10_median 0.0
+wandb:               pred_kabsch_rmsd<2_msdTop5 0.19499
+wandb:        pred_kabsch_rmsd<2_msdTop5_median 0.0
+wandb:                   pred_kabsch_rmsd<2_out 0.1351
+wandb:            pred_kabsch_rmsd<2_out_median 0.0
+wandb:          pred_kabsch_rmsd<2_out_msdTop10 0.22841
+wandb:   pred_kabsch_rmsd<2_out_msdTop10_median 0.0
+wandb:           pred_kabsch_rmsd<2_out_msdTop5 0.2117
+wandb:    pred_kabsch_rmsd<2_out_msdTop5_median 0.0
+wandb:               pred_kabsch_rmsd<2_out_std 0.10455
+wandb:                   pred_kabsch_rmsd<2_std 0.09417
+wandb:                       pred_kabsch_rmsd<5 0.65237
+wandb:                pred_kabsch_rmsd<5_median 1.0
+wandb:              pred_kabsch_rmsd<5_msdTop10 0.80223
+wandb:       pred_kabsch_rmsd<5_msdTop10_median 1.0
+wandb:               pred_kabsch_rmsd<5_msdTop5 0.76602
+wandb:        pred_kabsch_rmsd<5_msdTop5_median 1.0
+wandb:                   pred_kabsch_rmsd<5_out 0.65292
+wandb:            pred_kabsch_rmsd<5_out_median 1.0
+wandb:          pred_kabsch_rmsd<5_out_msdTop10 0.79387
+wandb:   pred_kabsch_rmsd<5_out_msdTop10_median 1.0
+wandb:           pred_kabsch_rmsd<5_out_msdTop5 0.76602
+wandb:    pred_kabsch_rmsd<5_out_msdTop5_median 1.0
+wandb:               pred_kabsch_rmsd<5_out_std 0.15606
+wandb:                   pred_kabsch_rmsd<5_std 0.15721
+wandb:                  pred_kabsch_rmsd_median 3.51363
+wandb:                pred_kabsch_rmsd_msdTop10 inf
+wandb:         pred_kabsch_rmsd_msdTop10_median 2.90842
+wandb:                 pred_kabsch_rmsd_msdTop5 inf
+wandb:          pred_kabsch_rmsd_msdTop5_median 3.05049
+wandb:                     pred_kabsch_rmsd_out inf
+wandb:              pred_kabsch_rmsd_out_median 3.44608
+wandb:            pred_kabsch_rmsd_out_msdTop10 inf
+wandb:     pred_kabsch_rmsd_out_msdTop10_median 2.92109
+wandb:             pred_kabsch_rmsd_out_msdTop5 inf
+wandb:      pred_kabsch_rmsd_out_msdTop5_median 2.97744
+wandb:                 pred_kabsch_rmsd_out_std nan
+wandb:                     pred_kabsch_rmsd_std nan
+wandb:                            pred_lig_size 35.95543
+wandb:                   pred_lig_size_msdTop10 35.95543
+wandb:                    pred_lig_size_msdTop5 35.95543
+wandb:                        pred_lig_size_std 0.0
+wandb:                                pred_loss 1.94173
+wandb:                       pred_loss_msdTop10 1.84098
+wandb:                        pred_loss_msdTop5 1.90519
+wandb:                            pred_loss_std 1.32405
+wandb:                       pred_lowT_aux_loss 7.11216
+wandb:                           pred_lowT_loss 3.65441
+wandb:                       pred_lowT_pos_loss 7.30883
+wandb:                              pred_lowT_t 0.15645
+wandb:             pred_metric_calculation_time 0.92422
+wandb:                              pred_norm_t 0.33376
+wandb:                     pred_norm_t_msdTop10 0.33989
+wandb:                      pred_norm_t_msdTop5 0.34078
+wandb:                          pred_norm_t_std 0.27322
+wandb:                      pred_num_designable 15.32312
+wandb:             pred_num_designable_msdTop10 15.32312
+wandb:              pred_num_designable_msdTop5 15.32312
+wandb:                  pred_num_designable_std 0.0
+wandb:                            pred_num_ligs 1.0
+wandb:                   pred_num_ligs_msdTop10 1.0
+wandb:                    pred_num_ligs_msdTop5 1.0
+wandb:                        pred_num_ligs_std 0.0
+wandb:                             pred_num_res 98.65181
+wandb:                    pred_num_res_msdTop10 98.65181
+wandb:                     pred_num_res_msdTop5 98.65181
+wandb:                         pred_num_res_std 0.0
+wandb:                            pred_pos_loss 3.88346
+wandb:                   pred_pos_loss_msdTop10 3.68197
+wandb:                    pred_pos_loss_msdTop5 3.81039
+wandb:                        pred_pos_loss_std 2.6481
+wandb:                   pred_radius_graph_time 0.02203
+wandb:                           pred_rec_sigma 7.52108
+wandb:                  pred_rec_sigma_msdTop10 7.52108
+wandb:                   pred_rec_sigma_msdTop5 7.52108
+wandb:                       pred_rec_sigma_std 0.0
+wandb:                                pred_rmsd inf
+wandb:                              pred_rmsd<1 0.00195
+wandb:                       pred_rmsd<1_median 0.0
+wandb:                     pred_rmsd<1_msdTop10 0.00836
+wandb:              pred_rmsd<1_msdTop10_median 0.0
+wandb:                      pred_rmsd<1_msdTop5 0.00557
+wandb:               pred_rmsd<1_msdTop5_median 0.0
+wandb:                          pred_rmsd<1_out 0.00223
+wandb:                   pred_rmsd<1_out_median 0.0
+wandb:                 pred_rmsd<1_out_msdTop10 0.00557
+wandb:          pred_rmsd<1_out_msdTop10_median 0.0
+wandb:                  pred_rmsd<1_out_msdTop5 0.00557
+wandb:           pred_rmsd<1_out_msdTop5_median 0.0
+wandb:                      pred_rmsd<1_out_std 0.00248
+wandb:                          pred_rmsd<1_std 0.00306
+wandb:                              pred_rmsd<2 0.03872
+wandb:                       pred_rmsd<2_median 0.0
+wandb:                     pred_rmsd<2_msdTop10 0.10028
+wandb:              pred_rmsd<2_msdTop10_median 0.0
+wandb:                      pred_rmsd<2_msdTop5 0.07242
+wandb:               pred_rmsd<2_msdTop5_median 0.0
+wandb:                          pred_rmsd<2_out 0.04708
+wandb:                   pred_rmsd<2_out_median 0.0
+wandb:                 pred_rmsd<2_out_msdTop10 0.12535
+wandb:          pred_rmsd<2_out_msdTop10_median 0.0
+wandb:                  pred_rmsd<2_out_msdTop5 0.10028
+wandb:           pred_rmsd<2_out_msdTop5_median 0.0
+wandb:                      pred_rmsd<2_out_std 0.04719
+wandb:                          pred_rmsd<2_std 0.03441
+wandb:                              pred_rmsd<5 0.42061
+wandb:                       pred_rmsd<5_median 0.0
+wandb:                     pred_rmsd<5_msdTop10 0.66852
+wandb:              pred_rmsd<5_msdTop10_median 1.0
+wandb:                      pred_rmsd<5_msdTop5 0.61281
+wandb:               pred_rmsd<5_msdTop5_median 1.0
+wandb:                          pred_rmsd<5_out 0.40418
+wandb:                   pred_rmsd<5_out_median 0.0
+wandb:                 pred_rmsd<5_out_msdTop10 0.66017
+wandb:          pred_rmsd<5_out_msdTop10_median 1.0
+wandb:                  pred_rmsd<5_out_msdTop5 0.59331
+wandb:           pred_rmsd<5_out_msdTop5_median 1.0
+wandb:                      pred_rmsd<5_out_std 0.19515
+wandb:                          pred_rmsd<5_std 0.1989
+wandb:                         pred_rmsd_median 5.16466
+wandb:                       pred_rmsd_msdTop10 inf
+wandb:                pred_rmsd_msdTop10_median 3.63468
+wandb:                        pred_rmsd_msdTop5 inf
+wandb:                 pred_rmsd_msdTop5_median 4.03856
+wandb:                            pred_rmsd_out inf
+wandb:                     pred_rmsd_out_median 5.34197
+wandb:                   pred_rmsd_out_msdTop10 inf
+wandb:            pred_rmsd_out_msdTop10_median 3.72961
+wandb:                    pred_rmsd_out_msdTop5 inf
+wandb:             pred_rmsd_out_msdTop5_median 4.16884
+wandb:                        pred_rmsd_out_std nan
+wandb:                            pred_rmsd_std nan
+wandb:                               pred_sigma 7.52108
+wandb:                      pred_sigma_msdTop10 7.52108
+wandb:                       pred_sigma_msdTop5 7.52108
+wandb:                           pred_sigma_std 0.0
+wandb:                                   pred_t 0.50088
+wandb:                          pred_t_msdTop10 0.51107
+wandb:                           pred_t_msdTop5 0.51064
+wandb:                               pred_t_std 0.26749
+wandb:                      trainer/global_step 0
+wandb: 
+wandb: 🚀 View run test_HarmonicFlow_timesplit_DistPock at: https://wandb.ai/hynsam137/pocket_gen/runs/fq211gle
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20231207_213502-fq211gle/logs
